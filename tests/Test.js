@@ -6,6 +6,7 @@ class Test extends EventEmitter {
 	constructor(param) {
 		super();
 		this.param = param;
+		this.param2 = param ?? "default";
 	}
 
 	test() {

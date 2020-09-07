@@ -11,7 +11,7 @@ module.exports = {
 		"json",
 	],
 	parserOptions: {
-		ecmaVersion: 8,
+		ecmaVersion: 12,
 		sourceType: "module",
 	},
 	rules: {
