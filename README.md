@@ -9,15 +9,15 @@ All team projects should be using this configuration, however, everyone is welco
 
 ## Installation
 
-This package is availabe on npm [here](https://www.npmjs.com/package/@name/eslint-config).  
-Install this package with `npm install @name/eslint-config` or `yarn add @name/eslint-config`.  
+This package is availabe on npm [here](https://www.npmjs.com/package/@owlebot/eslint-config).  
+Install this package with `npm install @owlebot/eslint-config` or `yarn add @owlebot/eslint-config`.  
 Make sure to have eslint already installed in your project.  
-Now simply create a `.eslintrc.json` file and add the following: `"extends": "@name/eslint-config"` or simply: `"extends": "@name"`.
+Now simply create a `.eslintrc.json` file and add the following: `"extends": "@owlebot/eslint-config"` or simply: `"extends": "@owlebot"`.
 
 .eslintrc.json:
 
 ```json
 {
-    "extends": "@name/eslint-config"
+    "extends": "@owlebot/eslint-config"
 }
 ```

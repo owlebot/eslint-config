@@ -1,27 +1,38 @@
 {
-  "name": "@name/eslint-config",
-  "version": "1.0.0",
-  "description": "Eslint config for all projects",
-  "main": "index.js",
-  "repository": "https://github.com/lechatboT/eslint-config",
-  "author": "khaazz <khaaz.dev@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "test": "eslint ."
-  },
-  "peerDependencies": {
-    "eslint": ">= 7"
-  },
-  "devDependencies": {
-    "eslint": "^7.8.1"
-  },
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
-  "dependencies": {
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-json": "^2.1.2",
-    "eslint-plugin-simple-import-sort": "^5.0.3"
-  }
+	"name": "@owlebot/eslint-config",
+	"version": "1.0.0",
+	"description": "Eslint config for all projects",
+	"author": "Khaaz <khaaz.dev@gmail.com>, Xerstom <xerstomdev@outlook.fr>",
+	"link": "https://github.com/owlebot/discord",
+	"main": "./index.js",
+	"license": "MIT",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"dependencies": {
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-json": "^2.1.2",
+		"eslint-plugin-simple-import-sort": "^5.0.3"
+	},
+	"devDependencies": {
+		"eslint": "^7.8.1"
+	},
+	"peerDependencies": {
+		"eslint": ">= 7"
+	},
+	"scripts": {
+		"test": "eslint ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/owlebot/eslint-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/owlebot/eslint-config/issues"
+	},
+	"homepage": "https://github.com/owlebot/eslint-config#readme",
+	"keywords": [
+		"eslint",
+		"eslint-config"
+	]
 }
