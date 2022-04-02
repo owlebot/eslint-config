@@ -7,7 +7,7 @@
 	"main": "./index.js",
 	"license": "MIT",
 	"engines": {
-		"node": ">=14.0.0"
+		"node": ">=16.0.0"
 	},
 	"dependencies": {
 		"eslint-plugin-import": "^2.22.0",
@@ -15,10 +15,10 @@
 		"eslint-plugin-simple-import-sort": "^5.0.3"
 	},
 	"devDependencies": {
-		"eslint": "^7.8.1"
+		"eslint": "^8.12.0"
 	},
 	"peerDependencies": {
-		"eslint": ">= 7"
+		"eslint": ">= 8"
 	},
 	"scripts": {
 		"test": "eslint ."

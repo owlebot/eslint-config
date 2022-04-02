@@ -3,14 +3,19 @@ import EventEmitter from "event";
 import t from "./test.json";
 
 class Test extends EventEmitter {
+	param;
+
+	#param2;
+	
 	constructor(param) {
 		super();
 		this.param = param;
-		this.param2 = param ?? "default";
+		this.#param2 = param ?? "default";
 	}
 
 	test() {
 		console.log(`hey${this.param}`);
+		console.log(`hey${this.#param2}`);
 		console.log("hey");
 	}
 	
