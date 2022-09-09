@@ -27,7 +27,8 @@ module.exports = {
 		"json/*": ["error", "allowComments"],
 
 		// imports
-		"simple-import-sort/sort": "error",
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
 		"sort-imports": "off",
 		"import/order": "off",
 		"import/first": "error",
