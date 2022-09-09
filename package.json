@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Eslint config for all projects",
 	"author": "Khaaz <khaaz.dev@gmail.com>, Xerstom <xerstomdev@outlook.fr>",
-	"link": "https://github.com/owlebot/discord",
+	"link": "https://github.com/owlebot/eslint-config",
 	"main": "./index.js",
 	"license": "MIT",
 	"engines": {
