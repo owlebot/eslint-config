@@ -10,13 +10,19 @@ module.exports = {
 		"simple-import-sort",
 		"json",
 	],
+	parser: "@babel/eslint-parser",
 	parserOptions: {
-		ecmaVersion: 13,
 		sourceType: "module",
+		requireConfigFile: false,
+		babelOptions: {
+			babelrc: false,
+			configFile: false,
+			plugins: ["@babel/plugin-syntax-import-assertions"],
+		},
 	},
 	rules: {
 		// --------
-		// plugins
+		// PLUGINS
 		//---------
 		"json/*": ["error", "allowComments"],
 
