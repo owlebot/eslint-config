@@ -1,6 +1,6 @@
 import EventEmitter from "event";
 
-import t from "./test.json";
+import t from "./test.json" assert { type: 'json' };
 
 class Test extends EventEmitter {
 	param;
@@ -16,6 +16,8 @@ class Test extends EventEmitter {
 	test() {
 		console.log(`hey${this.param}`);
 		console.log(`hey${this.#param2}`);
+		console.log(`hey${t.four?.five}`);
+		console.log(`hey${t.four?.five?.six}`);
 		console.log("hey");
 	}
 	
