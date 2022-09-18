@@ -1,0 +1,36 @@
+# Packages
+node_modules/
+package-lock.json
+yarn.lock
+
+# Log files
+.DS_Store
+logs/
+*.log
+
+# Miscellaneous
+.vscode/
+*.code-workspace
+examples/
+docs/
+tests/
+
+# NPM ignore
+
+.eslintrc.json
+.gitattributes
+.gitignore
+.travis.yml
+.github/
+.git/
+tsconfig.json
+tslint.json
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Optional npm cache directory
+.npm
+.yarn
+
+# Optional eslint cache
+.eslintcache
