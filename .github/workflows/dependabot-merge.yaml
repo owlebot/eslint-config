@@ -1,0 +1,21 @@
+name: Dependabot-merge
+# https://github.com/marketplace/actions/github-action-merge-dependabot
+on: 
+  pull_request:
+
+jobs:
+  tests:
+    uses: ./.github/workflows/test.yaml  # use the callable tests job to run tests
+  dependabot-merge:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
+    needs: [test]
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Automerge Dependabot PR
+        uses: fastify/github-action-merge-dependabot@v3
+        with:
+          target: minor
+          github-token: ${{ secrets.GITHUB_TOKEN }} 
