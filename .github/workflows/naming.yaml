@@ -8,12 +8,11 @@ on:
         required: true
         default: 'template'
   create:
-    branches:
-      - main
 
 jobs:
   naming:
     runs-on: ubuntu-latest
+    if: ${{ contains(github.ref, 'refs/heads/main/') }}
     steps:
     - name: Generate GH token
       id: generate_token
