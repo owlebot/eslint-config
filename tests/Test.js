@@ -2,7 +2,7 @@ import EventEmitter from "event";
 
 import t from "./test.json" assert { type: 'json' };
 
-class Test extends EventEmitter {
+export class Test extends EventEmitter {
 	param;
 
 	#param2;
@@ -32,5 +32,3 @@ class Test extends EventEmitter {
 		return t;
 	}
 }
-
-export default Test;
