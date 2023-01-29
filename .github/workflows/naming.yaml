@@ -9,23 +9,27 @@ on:
         default: 'template'
   create:
 
+permissions:
+  contents: read
+  issues: write 
+  
 jobs:
   naming:
     runs-on: ubuntu-latest
-    if: ${{ contains(github.ref, 'refs/heads/main/') }}
+    if: github.ref == 'refs/heads/main'
     steps:
-    - name: Generate GH token
-      id: generate_token
-      uses: tibdex/github-app-token@v1
-      with:
-        app_id: 271330
-        private_key: ${{ secrets.GH_APP_PKEY }}
-    - uses: actions/checkout@v3
-    - name: Create an issue
-      uses: dacbd/create-issue-action@main
-      with:
-        token: ${{ steps.generate_token.outputs.token }}
-        owner: owlebot
-        repo: main
-        title: "Naming: ${{ inputs.from }} => ${{ github.event.repository.name }}"
-        body: Name change from ${{ inputs.from }} to ${{ github.event.repository.name }}
+      - name: Generate GH token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: 271330
+          private_key: ${{ secrets.GH_APP_PKEY }}
+      - uses: actions/checkout@v3
+      - name: Create an issue
+        uses: dacbd/create-issue-action@main
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
+          owner: owlebot
+          repo: main
+          title: "Naming: ${{ inputs.from }} => ${{ github.event.repository.name }}"
+          body: Name change from ${{ inputs.from }} to ${{ github.event.repository.name }}
