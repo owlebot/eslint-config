@@ -7,7 +7,7 @@ on:
       SSH_GITHUB_KEY:
         required: false
 
-# Add PUBLIC_KEY to account ssh keys
+# Add PUBLIC_KEY to shared account "owle-bot" as a ssh keys
 # Add PRIVATE_KEY to CI as SSH_GITHUB_KEY
 
 jobs:
