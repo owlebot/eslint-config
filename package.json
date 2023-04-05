@@ -1,6 +1,6 @@
 {
 	"name": "@owlebot/eslint-config",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Eslint config for all projects",
 	"author": "Khaaz <khaaz.dev@gmail.com>, Xerstom <xerstomdev@outlook.fr>",
 	"link": "https://github.com/owlebot/eslint-config",
