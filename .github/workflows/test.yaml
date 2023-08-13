@@ -28,9 +28,9 @@ jobs:
         with:
           known_hosts: unnecessary
           key: ${{ secrets.SSH_GITHUB_KEY }}
-      - name: yarn install and lint
-        run: |
-          yarn install
-          yarn test
+      - name: Install dependencies
+        run: yarn install
         env:
           CI: true
+      - name: Lint
+        run: yarn test
