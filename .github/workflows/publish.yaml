@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - name: Dep install
+      - name: Install dependencies
         run: yarn install
       - name: Publish
         run: npm publish --access public
@@ -43,7 +43,7 @@ jobs:
           scope: '@owlebot'
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: Dep install
+      - name: Install dependencies
         run: yarn install
       - name: Publish
         run: npm publish
