@@ -55,5 +55,5 @@ jobs:
         run: yarn install --network-concurrency 1
         env:
           CI: true
-      - name: Lint
+      - name: Test
         run: yarn test
