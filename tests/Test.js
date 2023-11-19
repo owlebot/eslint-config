@@ -1,6 +1,6 @@
 import EventEmitter from "event";
 
-import t from "./test.json" assert { type: 'json' };
+import t from "./test.json" assert { type: "json" };
 
 export class Test extends EventEmitter {
 	param;
